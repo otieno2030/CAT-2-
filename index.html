@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bencarson Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .slideshow {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        .slide:first-child {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<BODY Bgcolor ="YELLOW" Text = "Navy">
+    <center><H1>MY PERSONAL PORTFOLIO </H1></center>
+    <H2 align = "center"><I>WELCOME</I></H2>
+    
+    <HR color = "magenta" size = "5"><Marquee behavior="alternate">  WELCOME </Marquee>
+    
+    <center><B><H2>WELCOME TO MY WORLD</B></H1></center>
+    <div class="navbar">
+      
+        <a href="Home.html">Home</a>
+        <a href="childhood.html">Childhood</a>
+        <a href="Education.html">Education</a>
+        <a href="Skills.html">Skills and Talents</a>
+        <a href="Futureaspiraions.html">Future and Aspirations</a>
+        <a href="contacts.html">Contacts</a>
+    </div>
+    <p align="center"><a href ="childhood.html">Visit childhood Page</a>
+    <div class="container" id="home">
+        <h1> MY GOALS AND AMBITIONS.</h1>
+        <p>From the very beginning, fitness has been an integral part of Bencarsons's life. The world of calisthenics, with its emphasis on bodyweight exercises, strength, and control, immediately captured his attention. What started as a simple interest evolved into a true passion as Bencarson delved into the intricacies of this discipline.
+        Calisthenics, for Bencarson, is not just a form of exercise; it's a lifestyle and a journey of self-discovery. The challenge of mastering gravity-defying moves, the artistry of fluid transitions between exercises, and the constant push to surpass personal limits have become the driving forces behind Bencarsons's commitment to calisthenics.
+        In the pursuit of his dream to become a professional calisthenics athlete, Bencarson has dedicated countless hours to training, refining techniques, and building both physical and mental strength. The discipline required for calisthenics is not just about the physical aspects but also about cultivating a mindset that embraces challenges and sees setbacks as opportunities for growth..I embody a unique blend of dedication and faith in my pursuit of becoming a professional calisthenics athlete. my commitment to consistent training showcases not only a passion for physical excellence but also a disciplined work ethic. This dedication is complemented by your my in Jesus Christ, emphasizing the spiritual aspect of my journey.
+
+        Simultaneously, my decision to pursue a software engineering degree in college reflects a balance between my athletic aspirations and academic goals. This dual commitment demonstrates a well-rounded approach to personal and professional development.
+        
+        my faith in Jesus Christ serves as a guiding force, providing strength and purpose as i navigate the challenges of both athletic and academic pursuits. This holistic approach to life, integrating physical training, spiritual beliefs, and academic endeavors, showcases a comprehensive commitment to personal growth.</p>
+    </div>
+
+    
+
+
+    
+    
+
+    
+
+    
+
+    
+
+
+        <div class="slideshow">
+            <img class="slide" src="vest.webp" alt="equipments">
+            <img class="slide" src="weightbelt.webp" alt="equipments">
+            <img class="slide" src="wristwrap.webp" alt="equipments">
+            <img class="slide" src="healthybowl.webp" alt="equipments">
+        </div>
+    </div>
+
+    
+        <div class="slideshow">
+            <img class="slide" src="paralletes.jpg" alt="products">
+            <img class="slide" src="vest.webp" alt="products">
+            <img class="slide" src="HeriaShorts.webp" alt="products">
+            <img class="slide" src="healthy.avif" alt="products">
+        </div>
+    </div>
+
+    
+        <div class="slideshow">
+            <img class="slide" src="wokoutshorts.webp" alt="apparells">
+            <img class="slide" src="vest.webp" alt="apparells">
+            <img class="slide" src="paralletes.jpg" alt="apparells">
+            <img class="slide" src="healthy.avif" alt="apparells">
+        </div>
+    </div>
+
+    
+        <div class="slideshow">
+            <img class="slide" src="healthybowl.webp" alt="nutrition">
+            <img class="slide" src="HeriaShorts.webp" alt="nutrition">
+            <img class="slide" src="vest.webp" alt="nutrition">
+            <img class="slide" src="paralletes.jpg" alt="nutrition">
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = "0";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.opacity = "1";
+            setTimeout(showSlides, 3000); 
+        }
+    </script>
+</body>
+</html>
